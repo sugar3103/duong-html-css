@@ -67,9 +67,9 @@ nav a:active {
 }
 
 .free-ship img {
-    width: 50px;
+    width: 30px;
     float: left;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-right: 5px;
 }
 
@@ -103,7 +103,8 @@ nav a:active {
 }
 
 .danh-sach-san-pham,
-.bottom {
+.bottom,
+.deal-hot {
     display: flex;
 }
 
@@ -114,8 +115,10 @@ nav a:active {
     display: table;
 }
 
-.box {
+.box,
+.column-hot {
     width: 33.33%;
+    float: left;
 }
 
 .menu {
@@ -164,5 +167,18 @@ nav a:active {
 }
 
 .ho-tro {
-    background-color: #ebebeb
+    background-color: #ebebeb;
+}
+
+footer {
+    background: black;
+}
+
+.footer-box {
+    width: 25%
+}
+
+footer p,
+footer li {
+    color: white
 }
