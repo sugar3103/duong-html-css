@@ -1,0 +1,168 @@
+/* set font cho toàn bộ các nội dung trong body */
+
+body {
+    font-family: sans-serif;
+    font-size: 13px
+}
+
+
+/* canh giữa cho thuộc tính */
+
+.center {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+header ul li {
+    float: left;
+}
+
+.top-bar,
+.second-bar {
+    height: 50px;
+}
+
+header ul {
+    text-transform: uppercase;
+    float: right;
+}
+
+.logo {
+    float: left;
+}
+
+.top-bar a:visited {
+    color: black;
+}
+
+nav a:visited {
+    color: white
+}
+
+.top-bar a:link,
+nav a:link {
+    color: yellow
+}
+
+.top-bar a:hover,
+nav a:hover {
+    color: #FF00FF;
+}
+
+.top-bar a:active,
+nav a:active {
+    color: #0000FF;
+}
+
+.second-bar {
+    background-color: black;
+}
+
+.free-ship img {
+    width: 50px;
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.free-ship {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.hero {
+    background-image: url("../img/index/group-1@2x.png");
+    background-size: cover;
+    padding: 200px 100px;
+}
+
+.category-hero {
+    background-image: url("../img/category/dam-banner@2x.png");
+    background-size: cover;
+    padding: 200px 100px;
+}
+
+.hero p:nth-child(1) {
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
+
+.hero h1:nth-child(2),
+.hero h1:nth-child(3) {
+    text-transform: uppercase;
+}
+
+.danh-sach-san-pham,
+.bottom {
+    display: flex;
+}
+
+.danh-sach-san-pham::after,
+.giao-hang-free-ship::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.box {
+    width: 33.33%;
+}
+
+.menu {
+    width: 25%;
+}
+
+.san-pham {
+    width: 75%;
+}
+
+.column {
+    float: left;
+}
+
+.menu ul {
+    display: none;
+}
+
+.menu:hover ul {
+    display: block;
+}
+
+.freeship p:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.freeship p:nth-child(2) {
+    color: grey
+}
+
+.bao-mat li::before {
+    content: url("../img/index/group-1_1.png")
+}
+
+.memberShip {
+    background-image: url("../img/index/membership.png");
+}
+
+.whiteSquare {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.he-thong {
+    background-color: #eab7bc
+}
+
+.ho-tro {
+    background-color: #ebebeb
+}
