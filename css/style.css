@@ -92,6 +92,23 @@ nav a:active {
     padding: 200px 100px;
 }
 
+.category-hero-title p:nth-child(1) {
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.category-hero-title,
+.category-hero-text {
+    width: 396px;
+}
+
+.category-hero-text p {
+    font-size: 16px;
+    text-align: center
+}
+
 .hero p:nth-child(1) {
     letter-spacing: 2.8px;
     text-transform: uppercase;
@@ -102,10 +119,56 @@ nav a:active {
     text-transform: uppercase;
 }
 
+.underline {
+    border: 1px solid black;
+    width: 50px;
+}
+
+.danh-sach-left {
+    background-image: url("../img/category/ad.png");
+    background-repeat: no-repeat;
+    height: 259px;
+    padding-top: 133px;
+    padding-left: 14px;
+}
+
+.danh-sach-left p {
+    font-weight: bold;
+}
+
 .danh-sach-san-pham,
 .bottom,
-.deal-hot {
+.deal-hot,
+.suggestion-content,
+.ban-dang-tim,
+.informations,
+.detail,
+.detail-bottom,
+.suggestion-detail-img,
+.gio-hang-detail {
     display: flex;
+}
+
+.ban-dang-tim-img-1,
+.ban-dang-tim-text-2,
+.information-img-1,
+.information-text-2,
+.detail-bottom-left,
+.detail-bottom-right {
+    float: left;
+}
+
+.ban-dang-tim-img-2,
+.ban-dang-tim-text-1,
+.information-text-1,
+.information-img-2 {
+    float: right;
+}
+
+.deal-hot-middle {
+    background-image: url("../img/index/mg-1540-5540.png");
+    background-repeat: no-repeat;
+    padding-top: 200px;
 }
 
 .danh-sach-san-pham::after,
@@ -113,6 +176,29 @@ nav a:active {
     content: "";
     clear: both;
     display: table;
+}
+
+.dang-ki {
+    background: black;
+    color: white;
+    width: 138px;
+    height: 42px;
+}
+
+.detail-left {
+    width: 33.33%
+}
+
+.detail-middle {
+    width: 33.33%
+}
+
+.detail-right {
+    width: 33.33%
+}
+
+.detail-bottom-left {
+    width: 15%;
 }
 
 .box,
@@ -156,6 +242,71 @@ nav a:active {
 
 .memberShip {
     background-image: url("../img/index/membership.png");
+}
+
+.suggest-1 p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.suggest-2 p,
+.suggest-3 p,
+.suggest-4 p,
+.suggest-5 p,
+.suggest-6 p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.suggest-1,
+.suggest-2,
+.suggest-3,
+.suggest-4,
+.suggest-5,
+.suggest-6 {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.suggest-1 {
+    background-image: url("../img/index/img-1194-copy-131.png");
+    width: 50%;
+    height: 233px;
+}
+
+.suggest-2 {
+    background-image: url("../img/index/img-9170-copy-4768.png");
+    width: 25%;
+}
+
+.suggest-3 {
+    background-image: url("../img/index/img-8240-copy-copy-2111.png");
+    width: 25%;
+}
+
+.suggest-4 {
+    background-image: url("../img/index/img-0513-copy-931.png");
+    width: 25%;
+    height: 233px;
+}
+
+.suggest-5 {
+    background-image: url("../img/index/mg-0359-8040.png");
+    width: 25%;
+}
+
+.suggest-6 {
+    background-image: url("../img/index/img-9477-copy-6272.png");
+    width: 50%;
+}
+
+.suggestion-detail-img-1,
+.suggestion-detail-img-2,
+.suggestion-detail-img-3,
+.suggestion-detail-img-4 {
+    margin-left: 10px;
 }
 
 .whiteSquare {
