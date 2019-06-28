@@ -5,11 +5,8 @@ body {
     font-size: 13px
 }
 
-
-/* canh giữa cho thuộc tính */
-
-.center {
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
 li {
@@ -21,13 +18,26 @@ a {
     padding: 15px;
 }
 
+
+/* canh giữa cho thuộc tính */
+
+.center {
+    text-align: center;
+}
+
+
+/* Header start */
+
+
+/* Header End */
+
 header ul li {
     float: left;
 }
 
 .top-bar,
 .second-bar {
-    height: 50px;
+    height: 57px;
 }
 
 header ul {
@@ -37,6 +47,9 @@ header ul {
 
 .logo {
     float: left;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 .top-bar a:visited {
@@ -66,6 +79,10 @@ nav a:active {
     background-color: black;
 }
 
+.second-bar li {
+    margin-top: 10px;
+}
+
 .free-ship img {
     width: 30px;
     float: left;
@@ -76,7 +93,6 @@ nav a:active {
 .free-ship {
     width: 25%;
     float: left;
-    box-sizing: border-box;
     margin-top: 10px;
 }
 
@@ -107,6 +123,14 @@ nav a:active {
 .category-hero-text p {
     font-size: 16px;
     text-align: center
+}
+
+.category-item {
+    width: 33.33%;
+}
+
+.category-item p:nth-child(3) {
+    color: pink
 }
 
 .hero p:nth-child(1) {
@@ -168,7 +192,10 @@ nav a:active {
 .deal-hot-middle {
     background-image: url("../img/index/mg-1540-5540.png");
     background-repeat: no-repeat;
+    background-position: 50%;
     padding-top: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .danh-sach-san-pham::after,
