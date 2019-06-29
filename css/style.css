@@ -96,6 +96,16 @@ nav a:active {
     margin-top: 10px;
 }
 
+.img-hover-contain {
+    overflow: hidden;
+}
+
+.category-item img:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
 .hero {
     background-image: url("../img/index/group-1@2x.png");
     background-size: cover;
@@ -187,6 +197,11 @@ nav a:active {
 .information-text-1,
 .information-img-2 {
     float: right;
+}
+
+.ban-dang-tim-text-1,
+.ban-dang-tim-text-2 {
+    font-size: 18px;
 }
 
 .deal-hot-middle {
@@ -334,10 +349,18 @@ nav a:active {
 .suggestion-detail-img-3,
 .suggestion-detail-img-4 {
     margin-left: 10px;
+    width: 25%;
 }
 
 .whiteSquare {
     background-color: rgba(255, 255, 255, 0.8);
+    width: 287px;
+    height: 289px;
+    margin: 20px 0 0 80px;
+}
+
+.memberShip p:first-child {
+    text-transform: uppercase;
 }
 
 .he-thong {
