@@ -55,7 +55,8 @@ header ul li ul {
     flex-direction: column;
     position: absolute;
     padding: 0;
-    background-color: red;
+    background-color: black;
+    color: white;
     width: 200px;
     opacity: 0;
 }
