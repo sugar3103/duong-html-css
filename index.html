@@ -7,11 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>HTML/CSS cô Hân</title>
 </head>
 
 <body>
     <header>
+
         <nav class="top-bar">
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
@@ -26,10 +31,33 @@
                 <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
+        <!-- Menu chính thứ 2 -->
         <nav class="second-bar">
+
             <a class="logo" href="#">honganstore Đường</a>
+            <button><i class="fas fa-bars"></i></button>
             <ul>
-                <li><a href="#">Áo</a></li>
+                <li>
+                    <a href="#">Áo</a>
+                    <!-- sub menu 1  -->
+                    <ul class="sub-menu1">
+                        <li>
+                            <a href="#">Áo thun</a>
+                            <!-- sub menu thu 2 -->
+                        </li>
+                        <li>
+                            <a href="#">Áo ba lỗ</a>
+                        </li>
+                        <li>
+                            <a href="#">Áo Sơ-mi</a>
+                            <ul class="sub-menu2">
+                                <li><a href="#">Áo sơ-mi</a></li>
+                                <li><a href="#">Áo sơ-mi trắng</a></li>
+                                <li><a href="#">Áo sơ-mi đỏ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="#">Váy</a></li>
                 <li><a href="#">SHORTS</a></li>
                 <li><a href="#">Quần Jeans</a></li>
@@ -81,11 +109,11 @@
         </div>
     </section>
     <!-- thông tin của deal hot giữa trang -->
-    <section>
+    <section class="deal-hot-display">
         <div class="center">
             <h4>ĐỪNG BỎ LỠ - DEAL HOT TRONG NGÀY</h4>
         </div>
-        <div class="center deal-hot center">
+        <div class="center deal-hot">
             <div class="column-hot">
                 <h3>Giảm 20%</h3>
                 <h1>CÁC SẢN PHẨM ÁO</h1>
