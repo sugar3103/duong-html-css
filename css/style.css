@@ -105,6 +105,11 @@ header>ul>li>ul {}
     background-color: white;
 }
 
+nav ul li {
+    text-align: center;
+    margin-top: 15px;
+}
+
 .top-bar a:visited {
     color: black;
 }
@@ -136,6 +141,41 @@ nav a:active {
     margin-top: 10px;
 }
 
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.control-banner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.control-banner .carousel-control-prev,
+.control-banner .carousel-control-next {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    display: block;
+    width: auto;
+    background: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: black;
+}
+
+.control-banner .carousel-control-prev {
+    left: auto
+}
+
+.control-banner .carousel-control-next {
+    right: auto
+}
+
 .free-ship img {
     width: 30px;
     float: left;
@@ -144,9 +184,12 @@ nav a:active {
 }
 
 .free-ship {
-    width: 25%;
-    float: left;
+    width: 50%;
     margin-top: 10px;
+}
+
+.freeship {
+    float: left;
 }
 
 .img-hover-contain {
@@ -270,8 +313,8 @@ nav a:active {
 }
 
 .giao-hang-free-ship {
-    float: left;
     width: 100%;
+    display: flex;
 }
 
 .danh-sach-san-pham::after,
@@ -345,6 +388,8 @@ nav a:active {
 
 .memberShip {
     background-image: url("../img/index/membership.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .suggest-1 p {
@@ -462,10 +507,6 @@ header .fa-bars {
     display: none
 }
 
-.freeship {
-    float: left;
-}
-
 @media screen and (max-width: 480px) {
     .box {
         width: 100%;
@@ -504,7 +545,7 @@ header .fa-bars {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 576px) {
     .deal-hot-display {
         display: none;
     }
@@ -512,5 +553,44 @@ header .fa-bars {
     .deal-hot-middle,
     .column-hot {
         display: none
+    }
+}
+
+
+/* mobile
+ chỉ có 2 cái hiển thị */
+
+.giao-hang-free-ship .free-ship:nth-child(3),
+.giao-hang-free-ship .free-ship:last-child,
+.ho-tro,
+.memberShip {
+    display: none
+}
+
+
+/* tablet */
+
+@media screen and (min-width: 600px) {
+    /* cả 3 cái đều hiển thị */
+    .giao-hang-free-ship .free-ship:nth-child(3),
+    .memberShip {
+        display: block;
+    }
+    .free-ship {
+        width: 33.33%;
+    }
+}
+
+
+/* desktop */
+
+@media screen and (min-width: 991px) {
+    /* cả 4 cái đều hiển thị */
+    .giao-hang-free-ship .free-ship:last-child,
+    .ho-tro {
+        display: block;
+    }
+    .free-ship {
+        width: 25%;
     }
 }
