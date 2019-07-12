@@ -28,9 +28,6 @@ a {
 
 /* Header start */
 
-
-/* Header End */
-
 header ul li {
     float: left;
 }
@@ -92,8 +89,6 @@ header>ul>li>ul {}
     top: 0;
 }
 
-.sub-menu2 {}
-
 .logo {
     float: left;
     font-weight: bold;
@@ -141,6 +136,12 @@ nav a:active {
     margin-top: 10px;
 }
 
+
+/* Header End */
+
+
+/* Banner top Start */
+
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -153,6 +154,10 @@ nav a:active {
     display: flex;
 }
 
+.contro-banner i {
+    background: black;
+}
+
 .control-banner .carousel-control-prev,
 .control-banner .carousel-control-next {
     position: relative;
@@ -160,13 +165,11 @@ nav a:active {
     bottom: auto;
     display: block;
     width: auto;
-    background: white;
+    background: black;
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon {
-    color: black;
-}
+.carousel-control-next-icon {}
 
 .control-banner .carousel-control-prev {
     left: auto
@@ -174,32 +177,6 @@ nav a:active {
 
 .control-banner .carousel-control-next {
     right: auto
-}
-
-.free-ship img {
-    width: 30px;
-    float: left;
-    margin-top: 15px;
-    margin-right: 5px;
-}
-
-.free-ship {
-    width: 50%;
-    margin-top: 10px;
-}
-
-.freeship {
-    float: left;
-}
-
-.img-hover-contain {
-    overflow: hidden;
-}
-
-.category-item img:hover {
-    -ms-transform: scale(2);
-    -webkit-transform: scale(2);
-    transform: scale(2);
 }
 
 .hero {
@@ -250,6 +227,86 @@ nav a:active {
 .hero h1:nth-child(2),
 .hero h1:nth-child(3) {
     text-transform: uppercase;
+}
+
+
+/* Banner top End */
+
+
+/* free-ship start*/
+
+.free-ship img {
+    width: 30px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.free-ship {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.freeship {
+    float: left;
+}
+
+.fixed-free-ship {
+    position: fixed;
+    right: 200px;
+    top: 250px;
+    z-index: 2;
+}
+
+.fixed-free-ship img {
+    width: 100px;
+    z-index: 2;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    animation-direction: reverse;
+    -webkit-transition: width 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+.fixed-free-ship img:hover {
+    width: 150px;
+}
+
+@-webkit-keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+
+/* Standard syntax */
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+
+/* free-ship end */
+
+.img-hover-contain {
+    overflow: hidden;
+}
+
+.category-item img:hover {
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
 }
 
 .underline {
@@ -392,6 +449,10 @@ nav a:active {
     background-repeat: no-repeat;
 }
 
+.ap-dung-khuyen-mai {
+    display: inline-block
+}
+
 .suggest-1 p {
     font-weight: bold;
     font-size: 20px;
@@ -458,6 +519,41 @@ nav a:active {
     width: 25%;
 }
 
+
+/*Slider */
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: black;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 9px;
+    height: 11px;
+    border-radius: 2px;
+    background: black;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 9px;
+    height: 11px;
+    border-radius: 2px;
+    background: black;
+    cursor: pointer;
+}
+
+
+/* Slider End */
+
 .whiteSquare {
     background-color: rgba(255, 255, 255, 0.8);
     width: 287px;
@@ -468,7 +564,7 @@ nav a:active {
 .whiteSquare-member {
     background-color: rgba(255, 255, 255, 0.8);
     width: 287px;
-    height: 289px;
+    height: 359px;
     margin: 28px 0 0 50px;
     padding: 28px 0 0 0;
 }
@@ -519,6 +615,7 @@ header .fa-bars {
     }
     .free-ship {
         width: 100%;
+        display: block;
     }
     .deal-hot-display {
         display: block
