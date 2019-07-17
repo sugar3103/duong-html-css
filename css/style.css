@@ -154,10 +154,6 @@ nav a:active {
     display: flex;
 }
 
-.contro-banner i {
-    background: black;
-}
-
 .control-banner .carousel-control-prev,
 .control-banner .carousel-control-next {
     position: relative;
@@ -165,11 +161,13 @@ nav a:active {
     bottom: auto;
     display: block;
     width: auto;
-    background: black;
+    background: white;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {}
+.carousel-control-prev i,
+.carousel-control-next i {
+    color: black;
+}
 
 .control-banner .carousel-control-prev {
     left: auto
@@ -317,13 +315,39 @@ nav a:active {
 .danh-sach-left {
     background-image: url("../img/category/ad.png");
     background-repeat: no-repeat;
-    height: 259px;
     padding-top: 133px;
     padding-left: 14px;
 }
 
 .danh-sach-left p {
     font-weight: bold;
+}
+
+.danh-sach-left-text {
+    margin: -20px 0;
+}
+
+.gio-hang-detail {
+    justify-content: space-between;
+    margin-left: 2%;
+}
+
+.gio-hang-25 {
+    display: flex;
+    width: 30%;
+}
+
+.gio-hang-25 img {
+    width: 94px;
+    height: 94px;
+}
+
+.gio-hang-15 {
+    width: 10%;
+}
+
+.gio-hang-25-text {
+    margin-left: 15px;
 }
 
 .danh-sach-san-pham,
@@ -335,16 +359,15 @@ nav a:active {
 .detail,
 .detail-bottom,
 .suggestion-detail-img,
-.gio-hang-detail {
+.gio-hang-detail,
+.display-flex {
     display: flex;
 }
 
 .ban-dang-tim-img-1,
 .ban-dang-tim-text-2,
 .information-img-1,
-.information-text-2,
-.detail-bottom-left,
-.detail-bottom-right {
+.information-text-2 {
     float: left;
 }
 
@@ -372,10 +395,12 @@ nav a:active {
 .giao-hang-free-ship {
     width: 100%;
     display: flex;
+    margin-left: 30px;
 }
 
 .danh-sach-san-pham::after,
-.giao-hang-free-ship::after {
+.giao-hang-free-ship::after,
+.tab-content::after {
     content: "";
     clear: both;
     display: table;
@@ -400,8 +425,12 @@ nav a:active {
     width: 33.33%
 }
 
-.detail-bottom-left {
-    width: 15%;
+.detail-bottom-15 {
+    width: 20%;
+}
+
+.justify-right {
+    justify-content: right;
 }
 
 .box,
