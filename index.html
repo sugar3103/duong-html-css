@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <title>HTML/CSS cô Hân</title>
 
 </head>
@@ -34,9 +34,8 @@
         </nav>
         <!-- Menu chính thứ 2 -->
         <nav class="second-bar">
-
             <a class="logo" href="#">honganstore Đường</a>
-            <button><i class="fas fa-bars"></i></button>
+
             <ul>
                 <li>
                     <a href="#">Áo</a>
@@ -67,6 +66,9 @@
             </ul>
         </nav>
     </header>
+    <section class="fixed-free-ship">
+        <a href="#"><img src="./img/Free-ship-logo.png" /></a>
+    </section>
     <section class="giao-hang-free-ship">
         <div class="free-ship">
             <img src="img/index/layer-1.png" alt="layer-1" />
@@ -139,10 +141,10 @@
             <!-- Left and right controls -->
             <div class="control-banner">
                 <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                    <i class="fas fa-angle-left"></i>
                 </a>
                 <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                    <i class="fas fa-angle-right"></i>
                 </a>
             </div>
         </div>
@@ -268,8 +270,13 @@
                 <p>120.000 VNĐ</p>
                 <p>NHẬN NGAY NHỮNG ƯU ĐÃI HẤP DẪN </p>
                 <p>VÀ CÁC XU HƯỚNG MỚI NHẤT</p>
-                <p>Email</p>
-                <button class="dang-ki">Đăng kí</button>
+
+                <form action="/action_page.php">
+                    <input type="email" name="email" placeholder="Email" />
+                    <br>
+                    <input type="submit" class="dang-ki" value="Đăng kí" />
+                </form>
+
             </div>
         </div>
         <div class="ho-tro center box">
