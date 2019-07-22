@@ -262,20 +262,49 @@
         <div>
             <span>Nhập mã giảm giá </span><span>Phí vận chuyển </span><span>Tổng cộng</span>
         </div>
-        <div class="ap-dung-khuyen-mai">
-            <p>&lt;CHỌN THÊM SẢN PHẨM</p>
-
-            <form action="/action_page.php">
-                <input type="text" name="voucher" pattern="[A-Za-z]{6}" title="Voucher có 6 kí tự gồm chữ và số">
-                <input type="submit" class="btn btn-dark" value="Áp dụng">
-            </form>
-
-            <p>Miễn phí</p>
-            <span>1.150.000 VNĐ</span>
-            <span>Thanh toán bảo mật &gt;</span>
+        <div class="display-flex ma-khuyen-mai">
+            <div>
+            </div>
+            <div>
+                <p>Nhập mã giảm giá</p>
+            </div>
+            <div>
+                <p>Phí vận chuyển</p>
+            </div>
+            <div>
+                <p>Tổng cộng</p>
+            </div>
+            <div>
+            
+            </div>
+        </div>
+        <div class="display-flex ma-khuyen-mai">
+            <div>
+                <button class="ma-khuyen-mai-button-1">
+                    &lt;CHỌN THÊM SẢN PHẨM
+                </button>
+            </div>
+            <div>
+                <form action="/action_page.php" class="display-flex">
+                    <input type="text" name="voucher" pattern="[A-Za-z][0-9]{6}"
+                        title="Voucher có 6 kí tự gồm chữ và số">
+                    <input type="submit" class="btn btn-dark" value="Áp dụng">
+                </form>
+            </div>
+            <div>
+                <p>Miễn phí</p>
+            </div>
+            <div>
+                <p>1.150.000 VNĐ</p>
+            </div>
+            <div>
+                <button  class="ma-khuyen-mai-button-2">
+                    Thanh toán bảo mật &gt;
+                </button>
+            </div>
         </div>
     </section>
-
+    
     <section class="bottom">
         <div class="he-thong center box">
             <h2>Hệ Thống Cửa Hàng HongAn.Store</h2>
@@ -294,7 +323,7 @@
             <div class="whiteSquare-member">
                 <h2>bạn là khách hàng mới?</h2>
                 <p>NHẬN NGAY VOUCHER TRỊ GIÁ </p>
-                <p>120.000 VNĐ</p>
+                <h2 class="font-bold">120.000 VNĐ</h2>
                 <p>NHẬN NGAY NHỮNG ƯU ĐÃI HẤP DẪN </p>
                 <p>VÀ CÁC XU HƯỚNG MỚI NHẤT</p>
                 <form action="/action_page.php">

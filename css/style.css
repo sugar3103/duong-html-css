@@ -23,8 +23,18 @@ a {
 .center {
     text-align: center;
 }
+
 .font-bold {
     font-weight: bold;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.display-flex{
+    display: flex;
 }
 /* Header start */
 
@@ -230,10 +240,10 @@ nav a:visited {
     left: 300px;
 }
 
-.hero button {
+.hero button  {
     float: right;
     background: white;
-    width: 200px;
+    width: 250px;
     height: 50px;
 }
 
@@ -360,21 +370,23 @@ nav a:visited {
     margin-left: 15px;
 }
 
-.danh-sach-san-pham, .bottom, .deal-hot, .suggestion-content, .ban-dang-tim, .informations, .detail, .detail-bottom, .suggestion-detail-img, .gio-hang-detail, .display-flex {
+.bottom, .suggestion-content, .informations, .detail, .detail-bottom, .suggestion-detail-img, .gio-hang-detail, .display-flex {
     display: flex;
 }
 
-.ban-dang-tim-img-1, .ban-dang-tim-text-2, .information-img-1, .information-text-2 {
-    float: left;
+/* ma-khuyen-mai start */
+.ma-khuyen-mai div{
+    width: 20%;
+    padding-left: 30px;
+}
+.ma-khuyen-mai-button-1 {
+    background: white;
+}
+.ma-khuyen-mai-button-2 {
+    background: #00a99d;
 }
 
-.ban-dang-tim-img-2, .ban-dang-tim-text-1, .information-text-1, .information-img-2 {
-    float: right;
-}
-
-.ban-dang-tim-text-1, .ban-dang-tim-text-2 {
-    font-size: 18px;
-}
+/* ma-khuyen-mai end */
 
 /* deal-hot start */
 
@@ -382,11 +394,10 @@ nav a:visited {
     background-image: url("../img/index/mg-1540-5540.png");
     background-repeat: no-repeat;
     background-position: 50%;
-    padding-top: 200px;
+    padding-top: 160px;
     padding-left: 0;
     padding-right: 40px;
 }
-
 
 /* deal-hot end */
 
@@ -396,7 +407,7 @@ nav a:visited {
     margin-left: 30px;
 }
 
-.danh-sach-san-pham::after, .giao-hang-free-ship::after, .tab-content::after {
+.giao-hang-free-ship::after, .tab-content::after {
     content: "";
     clear: both;
     display: table;
@@ -469,63 +480,105 @@ nav a:visited {
 
 
 
-.ap-dung-khuyen-mai {
-    display: inline-block
+/* suggestion start */
+
+.suggest-1 div {
+    position: absolute;
+    left: 100px;
+    top: 30px;
 }
 
-.suggest-1 p {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.suggest-2 p, .suggest-3 p, .suggest-4 p, .suggest-5 p, .suggest-6 p {
+.suggest-2 div {
+    position: absolute;
     color: white;
-    font-weight: bold;
-    font-size: 20px;
+    left: 100px;
+    top: 100px;
 }
 
-.suggest-1, .suggest-2, .suggest-3, .suggest-4, .suggest-5, .suggest-6 {
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 100px;
+.suggest-3 div {
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    left: 80px;
+}
+
+.suggest-4 div {
+    position: absolute;
+    color: white;
+    top: 80px;
+    left: 100px;
+}
+
+.suggest-5 div {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 110px;
+}
+
+.suggest-6 div {
+    position: absolute;
+    color: white;
+    top: 90px;
+    left: 250px;
 }
 
 .suggest-1 {
     background-image: url("../img/index/img-1194-copy-131.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 50%;
     height: 233px;
+    position: relative;
 }
 
 .suggest-2 {
     background-image: url("../img/index/img-9170-copy-4768.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 25%;
+    position: relative;
 }
 
 .suggest-3 {
     background-image: url("../img/index/img-8240-copy-copy-2111.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 25%;
+    position: relative;
 }
 
 .suggest-4 {
     background-image: url("../img/index/img-0513-copy-931.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 25%;
     height: 233px;
+    position: relative;
 }
 
 .suggest-5 {
     background-image: url("../img/index/mg-0359-8040.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 25%;
+    position: relative;
 }
 
 .suggest-6 {
     background-image: url("../img/index/img-9477-copy-6272.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 50%;
+    position: relative;
 }
 
 .suggestion-detail-img-1, .suggestion-detail-img-2, .suggestion-detail-img-3, .suggestion-detail-img-4 {
     margin-left: 10px;
     width: 25%;
 }
+
+/* suggestion end */
 
 /*Slider */
 
@@ -563,8 +616,9 @@ nav a:visited {
 .whiteSquare {
     background-color: rgba(255, 255, 255, 0.8);
     width: 287px;
-    height: 289px;
+    height: 210px;
     margin: 20px 0 0 80px;
+    padding-top: 40px;
 }
 
 .whiteSquare-member {
@@ -573,13 +627,15 @@ nav a:visited {
     height: 359px;
     padding: 28px 0 0 0;
 }
+
 .memberShip {
     background-image: url("../img/index/membership.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 6%;
-    padding-top: 5%; 
+    padding-top: 5%;
 }
+
 .memberShip h2:nth-child(1) {
     text-transform: uppercase;
 }
@@ -612,7 +668,11 @@ footer p, footer li {
 header .fa-bars {
     display: none
 }
-
+/* bottom start */
+.bottom{
+    padding-top: 20px;
+}
+/* bottom end */
 @media screen and (max-width: 480px) {
     .box {
         width: 100%;
