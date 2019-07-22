@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>HTML/CSS cô Hân</title>
 </head>
@@ -33,9 +34,9 @@
         </nav>
         <!-- Menu chính thứ 2 -->
         <nav class="second-bar">
-
-            <a class="logo" href="#">honganstore Đường</a>
-            <button><i class="fas fa-bars"></i></button>
+            <a class="logo" href="#">
+                <p class="animated infinite zoomIn">Đường honganStore</p>
+            </a>
             <ul>
                 <li>
                     <a href="#">Áo</a>
@@ -103,7 +104,9 @@
             <p>Trang chủ > Đầm > Đầm dáng ôm</p>
             <h4>Đầm Ôm A Hở Vai</h4>
             <p>1.150.000 VNĐ</p>
-            <p>Bạn đã có chiếc đầm hở vai đang làm mưa gió trong mùa hè thu năm nay chưa. Hãy sắm ngay 1 chiếc từ thương hiệu De Leah với 2 mầu đen tuyền và hồng thạch anh siêu hot này nhé:- Đầm ôm 2 lớp (có lót trong) - Đầm khoá kéo lưng - Cổ V rộng
+            <p>Bạn đã có chiếc đầm hở vai đang làm mưa gió trong mùa hè thu năm nay chưa. Hãy sắm ngay 1 chiếc từ thương
+                hiệu De Leah với 2 mầu đen tuyền và hồng thạch anh siêu hot này nhé:- Đầm ôm 2 lớp (có lót trong) - Đầm
+                khoá kéo lưng - Cổ V rộng
             </p>
             <div class="display-flex">
                 <p>Miễn phí giao hàng từ 449.000 đ</p>
@@ -210,12 +213,14 @@
             </div>
             <div id="menu1" class="container tab-pane fade"><br>
                 <h3>Menu 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
 
             </div>
             <div id="menu2" class="container tab-pane fade"><br>
                 <h3>Menu 2</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam.</p>
             </div>
         </div>
         </div>
@@ -267,8 +272,11 @@
                 <p>120.000 VNĐ</p>
                 <p>NHẬN NGAY NHỮNG ƯU ĐÃI HẤP DẪN </p>
                 <p>VÀ CÁC XU HƯỚNG MỚI NHẤT</p>
-                <p>Email</p>
-                <button class="dang-ki">Đăng kí</button>
+                <form action="/action_page.php">
+                    <input type="email" name="email" placeholder="Email" />
+                    <br>
+                    <input type="submit" class="dang-ki" value="Đăng kí" />
+                </form>
             </div>
         </div>
         <div class="ho-tro center box">

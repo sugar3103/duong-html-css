@@ -18,14 +18,14 @@ a {
     padding: 15px;
 }
 
-
 /* canh giữa cho thuộc tính */
 
 .center {
     text-align: center;
 }
-
-
+.font-bold {
+    font-weight: bold;
+}
 /* Header start */
 
 header ul li {
@@ -39,11 +39,9 @@ header {
     z-index: 1;
 }
 
-.top-bar,
-.second-bar {
+.top-bar, .second-bar {
     height: 57px;
 }
-
 
 /* làm multilevelmenu */
 
@@ -75,7 +73,6 @@ header li:hover>ul {
     opacity: 1;
 }
 
-
 /* lấy cái ul đầu tiên của Header */
 
 header>ul>li>ul {}
@@ -94,7 +91,6 @@ header>ul>li>ul {}
     float: left;
     font-weight: bold;
     font-size: 18px;
-    margin-top: 5px;
 }
 
 .top-bar {
@@ -114,18 +110,15 @@ nav a:visited {
     color: white
 }
 
-.top-bar a:link,
-nav a:link {
+.top-bar a:link, nav a:link {
     color: yellow
 }
 
-.top-bar a:hover,
-nav a:hover {
+.top-bar a:hover, nav a:hover {
     color: #FF00FF;
 }
 
-.top-bar a:active,
-nav a:active {
+.top-bar a:active, nav a:active {
     color: #0000FF;
 }
 
@@ -133,13 +126,7 @@ nav a:active {
     background-color: black;
 }
 
-.second-bar li {
-    margin-top: 10px;
-}
-
-
 /* Header End */
-
 
 /* Banner top Start */
 
@@ -155,8 +142,7 @@ nav a:active {
     display: flex;
 }
 
-.control-banner .carousel-control-prev,
-.control-banner .carousel-control-next {
+.control-banner .carousel-control-prev, .control-banner .carousel-control-next {
     position: relative;
     top: auto;
     bottom: auto;
@@ -165,8 +151,7 @@ nav a:active {
     background: white;
 }
 
-.carousel-control-prev i,
-.carousel-control-next i {
+.carousel-control-prev i, .carousel-control-next i {
     color: black;
 }
 
@@ -178,35 +163,25 @@ nav a:active {
     right: auto
 }
 
-.hero {
-    background-image: url("../img/index/group-1@2x.png");
-    background-size: cover;
-    padding: 200px 100px;
-    position: relative;
-    float: left;
-    width: 100%;
-}
-
 .category-hero {
     background-image: url("../img/category/dam-banner@2x.png");
     background-size: cover;
-    padding: 200px 100px;
+    padding: 300px 200px;
 }
 
 .category-hero-title p:nth-child(1) {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 50px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.category-hero-title,
-.category-hero-text {
-    width: 396px;
+.category-hero-title, .category-hero-text {
+    width: 600px;
 }
 
 .category-hero-text p {
-    font-size: 16px;
+    font-size: 25px;
     text-align: center
 }
 
@@ -218,19 +193,51 @@ nav a:active {
     color: pink
 }
 
+.hero {
+    background-image: url("../img/index/group-1@2x.png");
+    background-size: cover;
+    padding: 200px 200px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.hero-text {
+    width: 460px;
+}
+
 .hero p:nth-child(1) {
     letter-spacing: 2.8px;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.hero h1:nth-child(2),
-.hero h1:nth-child(3) {
+.hero h1:nth-child(2), .hero h1:nth-child(3) {
     text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
 }
 
+.hero h6:nth-child(4) {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero p:nth-child(6) {
+    position: absolute;
+    bottom: 10px;
+    left: 300px;
+}
+
+.hero button {
+    float: right;
+    background: white;
+    width: 200px;
+    height: 50px;
+}
 
 /* Banner top End */
-
 
 /* free-ship start*/
 
@@ -274,6 +281,8 @@ nav a:active {
     width: 150px;
 }
 
+/* freeship logo Start */
+
 @-webkit-keyframes mymove {
     from {
         left: 0px;
@@ -282,7 +291,6 @@ nav a:active {
         left: 200px;
     }
 }
-
 
 /* Standard syntax */
 
@@ -295,6 +303,7 @@ nav a:active {
     }
 }
 
+/* freeship logo End */
 
 /* free-ship end */
 
@@ -351,47 +360,35 @@ nav a:active {
     margin-left: 15px;
 }
 
-.danh-sach-san-pham,
-.bottom,
-.deal-hot,
-.suggestion-content,
-.ban-dang-tim,
-.informations,
-.detail,
-.detail-bottom,
-.suggestion-detail-img,
-.gio-hang-detail,
-.display-flex {
+.danh-sach-san-pham, .bottom, .deal-hot, .suggestion-content, .ban-dang-tim, .informations, .detail, .detail-bottom, .suggestion-detail-img, .gio-hang-detail, .display-flex {
     display: flex;
 }
 
-.ban-dang-tim-img-1,
-.ban-dang-tim-text-2,
-.information-img-1,
-.information-text-2 {
+.ban-dang-tim-img-1, .ban-dang-tim-text-2, .information-img-1, .information-text-2 {
     float: left;
 }
 
-.ban-dang-tim-img-2,
-.ban-dang-tim-text-1,
-.information-text-1,
-.information-img-2 {
+.ban-dang-tim-img-2, .ban-dang-tim-text-1, .information-text-1, .information-img-2 {
     float: right;
 }
 
-.ban-dang-tim-text-1,
-.ban-dang-tim-text-2 {
+.ban-dang-tim-text-1, .ban-dang-tim-text-2 {
     font-size: 18px;
 }
+
+/* deal-hot start */
 
 .deal-hot-middle {
     background-image: url("../img/index/mg-1540-5540.png");
     background-repeat: no-repeat;
     background-position: 50%;
     padding-top: 200px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 0;
+    padding-right: 40px;
 }
+
+
+/* deal-hot end */
 
 .giao-hang-free-ship {
     width: 100%;
@@ -399,9 +396,7 @@ nav a:active {
     margin-left: 30px;
 }
 
-.danh-sach-san-pham::after,
-.giao-hang-free-ship::after,
-.tab-content::after {
+.danh-sach-san-pham::after, .giao-hang-free-ship::after, .tab-content::after {
     content: "";
     clear: both;
     display: table;
@@ -434,14 +429,13 @@ nav a:active {
     justify-content: right;
 }
 
-.box,
-.column-hot {
+.box, .column-hot {
     width: 33.33%;
     float: left;
 }
 
 .menu {
-    width: 25%;
+    width: 20%;
 }
 
 .san-pham {
@@ -473,11 +467,7 @@ nav a:active {
     content: url("../img/index/group-1_1.png")
 }
 
-.memberShip {
-    background-image: url("../img/index/membership.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 .ap-dung-khuyen-mai {
     display: inline-block
@@ -488,22 +478,13 @@ nav a:active {
     font-size: 20px;
 }
 
-.suggest-2 p,
-.suggest-3 p,
-.suggest-4 p,
-.suggest-5 p,
-.suggest-6 p {
+.suggest-2 p, .suggest-3 p, .suggest-4 p, .suggest-5 p, .suggest-6 p {
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
 
-.suggest-1,
-.suggest-2,
-.suggest-3,
-.suggest-4,
-.suggest-5,
-.suggest-6 {
+.suggest-1, .suggest-2, .suggest-3, .suggest-4, .suggest-5, .suggest-6 {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 100px;
@@ -541,14 +522,10 @@ nav a:active {
     width: 50%;
 }
 
-.suggestion-detail-img-1,
-.suggestion-detail-img-2,
-.suggestion-detail-img-3,
-.suggestion-detail-img-4 {
+.suggestion-detail-img-1, .suggestion-detail-img-2, .suggestion-detail-img-3, .suggestion-detail-img-4 {
     margin-left: 10px;
     width: 25%;
 }
-
 
 /*Slider */
 
@@ -581,7 +558,6 @@ nav a:active {
     cursor: pointer;
 }
 
-
 /* Slider End */
 
 .whiteSquare {
@@ -595,10 +571,15 @@ nav a:active {
     background-color: rgba(255, 255, 255, 0.8);
     width: 287px;
     height: 359px;
-    margin: 28px 0 0 50px;
     padding: 28px 0 0 0;
 }
-
+.memberShip {
+    background-image: url("../img/index/membership.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 6%;
+    padding-top: 5%; 
+}
 .memberShip h2:nth-child(1) {
     text-transform: uppercase;
 }
@@ -624,8 +605,7 @@ footer {
     width: 25%
 }
 
-footer p,
-footer li {
+footer p, footer li {
     color: white
 }
 
@@ -650,9 +630,7 @@ header .fa-bars {
     .deal-hot-display {
         display: block
     }
-    .deal-hot,
-    .deal-hot-middle,
-    .column-hot {
+    .deal-hot, .deal-hot-middle, .column-hot {
         width: 100%;
         float: none;
         display: block
@@ -660,8 +638,7 @@ header .fa-bars {
 }
 
 @media screen and (max-width: 767px) {
-    .top-bar,
-    header ul {
+    .top-bar, header ul {
         display: none
     }
     header .fa-bars {
@@ -676,31 +653,23 @@ header .fa-bars {
     .deal-hot-display {
         display: none;
     }
-    .deal-hot,
-    .deal-hot-middle,
-    .column-hot {
+    .deal-hot, .deal-hot-middle, .column-hot {
         display: none
     }
 }
 
-
 /* mobile
  chỉ có 2 cái hiển thị */
 
-.giao-hang-free-ship .free-ship:nth-child(3),
-.giao-hang-free-ship .free-ship:last-child,
-.ho-tro,
-.memberShip {
+.giao-hang-free-ship .free-ship:nth-child(3), .giao-hang-free-ship .free-ship:last-child, .ho-tro, .memberShip {
     display: none
 }
-
 
 /* tablet */
 
 @media screen and (min-width: 600px) {
     /* cả 3 cái đều hiển thị */
-    .giao-hang-free-ship .free-ship:nth-child(3),
-    .memberShip {
+    .giao-hang-free-ship .free-ship:nth-child(3), .memberShip {
         display: block;
     }
     .free-ship {
@@ -708,13 +677,11 @@ header .fa-bars {
     }
 }
 
-
 /* desktop */
 
 @media screen and (min-width: 991px) {
     /* cả 4 cái đều hiển thị */
-    .giao-hang-free-ship .free-ship:last-child,
-    .ho-tro {
+    .giao-hang-free-ship .free-ship:last-child, .ho-tro {
         display: block;
     }
     .free-ship {

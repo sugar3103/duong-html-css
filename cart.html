@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>HTML/CSS cô Hân</title>
 </head>
@@ -32,8 +33,9 @@
         </nav>
         <!-- Menu chính thứ 2 -->
         <nav class="second-bar">
-            <a class="logo" href="#">honganstore Đường</a>
-            <button><i class="fas fa-bars"></i></button>
+            <a class="logo" href="#">
+                <p class="animated infinite zoomIn">Đường honganStore</p>
+            </a>
             <ul>
                 <li>
                     <a href="#">Áo</a>
@@ -295,8 +297,11 @@
                 <p>120.000 VNĐ</p>
                 <p>NHẬN NGAY NHỮNG ƯU ĐÃI HẤP DẪN </p>
                 <p>VÀ CÁC XU HƯỚNG MỚI NHẤT</p>
-                <p>Email</p>
-                <button class="dang-ki">Đăng kí</button>
+                <form action="/action_page.php">
+                    <input type="email" name="email" placeholder="Email" />
+                    <br>
+                    <input type="submit" class="dang-ki" value="Đăng kí" />
+                </form>
             </div>
         </div>
         <div class="ho-tro center box">
