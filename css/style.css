@@ -18,6 +18,28 @@ a {
     padding: 15px;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    padding: 8px;
+    text-align: left;
+}
+
+/* tr:nth-child(even) {
+    background-color: #dddddd;
+} */
+
 /* canh giữa cho thuộc tính */
 
 .center {
@@ -27,15 +49,19 @@ a {
 .font-bold {
     font-weight: bold;
 }
-.float-left{
+
+.float-left {
     float: left;
 }
-.float-right{
+
+.float-right {
     float: right;
 }
-.display-flex{
+
+.display-flex {
     display: flex;
 }
+
 /* Header start */
 
 header ul li {
@@ -173,6 +199,8 @@ nav a:visited {
     right: auto
 }
 
+/* categroy start */
+
 .category-hero {
     background-image: url("../img/category/dam-banner@2x.png");
     background-size: cover;
@@ -202,6 +230,11 @@ nav a:visited {
 .category-item p:nth-child(3) {
     color: pink
 }
+.informations-text{
+    width: 850px;
+    padding: 30px;
+}
+/* category end */
 
 .hero {
     background-image: url("../img/index/group-1@2x.png");
@@ -240,7 +273,7 @@ nav a:visited {
     left: 300px;
 }
 
-.hero button  {
+.hero button {
     float: right;
     background: white;
     width: 250px;
@@ -261,10 +294,6 @@ nav a:visited {
 .free-ship {
     width: 50%;
     margin-top: 10px;
-}
-
-.freeship {
-    float: left;
 }
 
 .fixed-free-ship {
@@ -354,7 +383,7 @@ nav a:visited {
 
 .gio-hang-25 {
     display: flex;
-    width: 30%;
+    width: 25%;
 }
 
 .gio-hang-25 img {
@@ -370,18 +399,21 @@ nav a:visited {
     margin-left: 15px;
 }
 
-.bottom, .suggestion-content, .informations, .detail, .detail-bottom, .suggestion-detail-img, .gio-hang-detail, .display-flex {
+.bottom, .suggestion-content, .detail, .detail-bottom, .gio-hang-detail, .display-flex {
     display: flex;
 }
 
 /* ma-khuyen-mai start */
-.ma-khuyen-mai div{
+
+.ma-khuyen-mai div {
     width: 20%;
     padding-left: 30px;
 }
+
 .ma-khuyen-mai-button-1 {
     background: white;
 }
+
 .ma-khuyen-mai-button-2 {
     background: #00a99d;
 }
@@ -404,13 +436,7 @@ nav a:visited {
 .giao-hang-free-ship {
     width: 100%;
     display: flex;
-    margin-left: 30px;
-}
-
-.giao-hang-free-ship::after, .tab-content::after {
-    content: "";
-    clear: both;
-    display: table;
+    padding-left: 30px;
 }
 
 .dang-ki {
@@ -418,26 +444,6 @@ nav a:visited {
     color: white;
     width: 138px;
     height: 42px;
-}
-
-.detail-left {
-    width: 33.33%
-}
-
-.detail-middle {
-    width: 33.33%
-}
-
-.detail-right {
-    width: 33.33%
-}
-
-.detail-bottom-15 {
-    width: 20%;
-}
-
-.justify-right {
-    justify-content: right;
 }
 
 .box, .column-hot {
@@ -477,8 +483,6 @@ nav a:visited {
 .bao-mat li::before {
     content: url("../img/index/group-1_1.png")
 }
-
-
 
 /* suggestion start */
 
@@ -573,12 +577,86 @@ nav a:visited {
     position: relative;
 }
 
-.suggestion-detail-img-1, .suggestion-detail-img-2, .suggestion-detail-img-3, .suggestion-detail-img-4 {
-    margin-left: 10px;
-    width: 25%;
+/* suggestion end */
+
+/* detail start */
+
+.detail-left {
+    width: 33.33%;
+    padding: 40px;
 }
 
-/* suggestion end */
+.detail-middle {
+    width: 33.33%;
+    padding-left: 50px
+}
+
+.detail-right {
+    width: 33.33%
+}
+
+.detail-bottom-15 {
+    width: 20%;
+}
+
+.detail-left-box {
+    position: relative
+}
+
+.detail-button {
+    background: #eab7bc;
+    color: white;
+    position: absolute;
+    right: 0;
+}
+
+.sub-img-1 {
+    padding-top: 5px;
+    width: 78px;
+}
+
+.sub-img {
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 78px;
+}
+
+.btn-color {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-black {
+    background-color: black;
+}
+
+.btn-pink {
+    background-color: pink;
+    margin-left: 10px;
+}
+
+.btn-size {
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 5px;
+    width: 35px;
+}
+
+.btn-size:hover, .btn-size:focus, .active-size {
+    background-color: black;
+    color: white;
+}
+
+.btn-gio-hang {
+    background-color: #00a99d;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+}
+
+/* detail end */
 
 /*Slider */
 
@@ -613,6 +691,8 @@ nav a:visited {
 
 /* Slider End */
 
+/* whitesquare start */
+
 .whiteSquare {
     background-color: rgba(255, 255, 255, 0.8);
     width: 287px;
@@ -627,6 +707,8 @@ nav a:visited {
     height: 359px;
     padding: 28px 0 0 0;
 }
+
+/* whitesquare end */
 
 .memberShip {
     background-image: url("../img/index/membership.png");
@@ -668,11 +750,15 @@ footer p, footer li {
 header .fa-bars {
     display: none
 }
+
 /* bottom start */
-.bottom{
+
+.bottom {
     padding-top: 20px;
 }
+
 /* bottom end */
+
 @media screen and (max-width: 480px) {
     .box {
         width: 100%;

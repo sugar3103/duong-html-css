@@ -21,7 +21,7 @@
         <nav class="top-bar">
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="category.html">Tạp chí</a></li>
+                <li><a href="category.html">Category</a></li>
                 <li><a href="detail.html">Chi tiết</a></li>
                 <li><a href="cart.html">Theo dõi đơn hàng</a></li>
                 <li><a href="#">Đăng nhập</a></li>
@@ -101,32 +101,42 @@
     </section>
 
     <section class="suggestion-detail center">
-        <h4>CÓ THỂ BẠN SẼ THÍCH</h4>
-        <div class="suggestion-detail-img">
-            <div class="suggestion-detail-img-1">
-                <img src="img/detail/product-1.png" alt="product1" />
+        <h1>Có thể bạn sẽ thích</h1>
+        <div class="display-flex">
+            <div class="suggestion-detail-img category-item">
+                <div class="img-hover-contain">
+                    <a href="#"><img src="img/detail/product-1.png" alt="product1" /></a>
+                </div>
                 <p>ĐẦM SP911</p>
                 <p>349.000</p>
             </div>
-            <div class="suggestion-detail-img-2">
-                <img src="img/detail/product-5.png" alt="product2" />
+            <div class="suggestion-detail-img category-item">
+                <div class="img-hover-contain">
+                    <a href="#"><img src="img/detail/product-5.png" alt="product2" /></a>
+                </div>
                 <p>ĐẦM SP911</p>
                 <p>349.000</p>
             </div>
-            <div class="suggestion-detail-img-3">
-                <img src="img/detail/product-6.png" alt="product3" />
+            <div class="suggestion-detail-img category-item">
+                <div class="img-hover-contain">
+                    <a href="#"><img src="img/detail/product-6.png" alt="product3" /></a>
+                </div>
                 <p>ĐẦM SP911</p>
                 <p>349.000</p>
             </div>
-            <div class="suggestion-detail-img-4">
-                <img src="img/detail/product-4.png" alt="product4" />
+            <div class="suggestion-detail-img category-item">
+                <div class="img-hover-contain">
+                    <a href="#"><img src="img/detail/product-4.png" alt="product4" /></a>
+                </div>
                 <p>ĐẦM SP911</p>
                 <p>349.000</p>
             </div>
-
         </div>
     </section>
-    <section class="gio-hang">
+    <div class="center">
+        <h3>GIỎ HÀNG</h3>
+    </div>
+    <!-- <section class="gio-hang">
         <div class="center">
             <h3>GIỎ HÀNG</h3>
         </div>
@@ -257,11 +267,8 @@
                 <p>1.150.000</p>
             </div>
             <div class="gio-hang-15">
-                <button style="background: none">X</button>
+                <button style="background: white">X</button>
             </div>
-        </div>
-        <div>
-            <span>Nhập mã giảm giá </span><span>Phí vận chuyển </span><span>Tổng cộng</span>
         </div>
         <div class="display-flex ma-khuyen-mai">
             <div>
@@ -296,7 +303,7 @@
                 <p>Miễn phí</p>
             </div>
             <div>
-                <p>1.150.000 VNĐ</p>
+                <strong>1.150.000 </strong>VND
             </div>
             <div>
                 <button class="ma-khuyen-mai-button-2">
@@ -304,6 +311,173 @@
                 </button>
             </div>
         </div>
+    </section> -->
+    <br>
+    <section>
+        <table>
+            <tr>
+                <th></th>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Giá khuyến mãi</th>
+                <th>% khuyến mãi</th>
+            </tr>
+            <tr>
+                <td class="display-flex">
+                    <img src="img/cart/sub-img-1.png" width="94px" height="94px" />
+                    <div class="gio-hang-25-text">
+                        <h5><strong>Đầm Ôm A Hở Vai</strong></h5>
+                        <p>Giao trong 3-5 ngày làm việc</p>
+                        <p>Không áp dụng được mã giảm giá</p>
+                    </div>
+                </td>
+                <td>
+                    <p>S</p>
+                </td>
+                <td>
+                    <p>Đen</p>
+                </td>
+                <td>
+                    <form>
+                        <input type="number" name="quantity" min="1" max="99" value="1" />
+                    </form>
+                </td>
+                <td>
+                    <p>1.150.000</p>
+                </td>
+                <td>
+                    <button style="background: none">X</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="display-flex">
+                    <img src="img/cart/sub-img-1.png" width="94px" height="94px" />
+                    <div class="gio-hang-25-text">
+                        <h5><strong>Đầm Ôm A Hở Vai</strong></h5>
+                        <p>Giao trong 3-5 ngày làm việc</p>
+                        <p>Không áp dụng được mã giảm giá</p>
+                    </div>
+                </td>
+                <td>
+                    <p>S</p>
+                </td>
+                <td>
+                    <p>Đen</p>
+                </td>
+                <td>
+                    <form>
+                        <input type="number" name="quantity" min="1" max="99" value="1" />
+                    </form>
+                </td>
+                <td>
+                    <p>1.150.000</p>
+                </td>
+                <td>
+                    <button style="background: none">X</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="display-flex">
+                    <img src="img/cart/sub-img-1.png" width="94px" height="94px" />
+                    <div class="gio-hang-25-text">
+                        <h5><strong>Đầm Ôm A Hở Vai</strong></h5>
+                        <p>Giao trong 3-5 ngày làm việc</p>
+                        <p>Không áp dụng được mã giảm giá</p>
+                    </div>
+                </td>
+                <td>
+                    <p>S</p>
+                </td>
+                <td>
+                    <p>Đen</p>
+                </td>
+                <td>
+                    <form>
+                        <input type="number" name="quantity" min="1" max="99" value="1" />
+                    </form>
+                </td>
+                <td>
+                    <p>1.150.000</p>
+                </td>
+                <td>
+                    <button style="background: none">X</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="display-flex">
+                    <img src="img/cart/sub-img-1.png" width="94px" height="94px" />
+                    <div class="gio-hang-25-text">
+                        <h5><strong>Đầm Ôm A Hở Vai</strong></h5>
+                        <p>Giao trong 3-5 ngày làm việc</p>
+                        <p>Không áp dụng được mã giảm giá</p>
+                    </div>
+                </td>
+                <td>
+                    <p>S</p>
+                </td>
+                <td>
+                    <p>Đen</p>
+                </td>
+                <td>
+                    <form>
+                        <input type="number" name="quantity" min="1" max="99" value="1" />
+                    </form>
+                </td>
+                <td>
+                    <p>1.150.000</p>
+                </td>
+                <td>
+                    <button style="background: none">X</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    <p>Nhập mã giảm giá</p>
+                </th>
+                <th>
+                    <p>Phí vận chuyển</p>
+                </th>
+                <th>
+                    <p>Tổng cộng</p>
+                </th>
+                <th>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <button class="ma-khuyen-mai-button-1">
+                        &lt;CHỌN THÊM SẢN PHẨM
+                    </button>
+                </td>
+                <td>
+                    <form action="/action_page.php" class="display-flex">
+                        <input type="text" name="voucher" pattern="[A-Za-z][0-9]{6}"
+                            title="Voucher có 6 kí tự gồm chữ và số">
+                        <input type="submit" class="btn btn-dark" value="Áp dụng">
+                    </form>
+                </td>
+                <td>
+                    <p>Miễn phí</p>
+                </td>
+                <td>
+                    <strong>1.150.000 </strong>VNĐ
+                </td>
+                <td>
+                    <button class="ma-khuyen-mai-button-2">
+                        Thanh toán bảo mật &gt;
+                    </button>
+                </td>
+
+            </tr>
+
+        </table>
     </section>
 
     <section class="bottom">

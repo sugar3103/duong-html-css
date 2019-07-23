@@ -22,7 +22,7 @@
         <nav class="top-bar">
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="category.html">Tạp chí</a></li>
+                <li><a href="category.html">Category</a></li>
                 <li><a href="detail.html">Chi tiết</a></li>
                 <li><a href="cart.html">Theo dõi đơn hàng</a></li>
                 <li><a href="#">Đăng nhập</a></li>
@@ -109,49 +109,53 @@
                 hiệu De Leah với 2 mầu đen tuyền và hồng thạch anh siêu hot này nhé:- Đầm ôm 2 lớp (có lót trong) - Đầm
                 khoá kéo lưng - Cổ V rộng
             </p>
-            <div class="display-flex">
+            <div class="display-flex detail-left-box">
                 <p>Miễn phí giao hàng từ 449.000 đ</p>
-                <button>Miễn phí</button>
+                <button class="detail-button">Miễn phí</button>
             </div>
-            <div class="display-flex">
+            <div class="display-flex detail-left-box">
                 <p>30 NGÀY ĐỔI TRẢ (*)</p>
-                <button>Miễn phí</button>
+                <button class="detail-button">Miễn phí</button>
             </div>
-            <div class="display-flex">
+            <div class="display-flex detail-left-box">
                 <p>Thanh toán khi nhận hàng</p>
-                <button class="justify-right">Miễn phí</button>
+                <button class="detail-button">Miễn phí</button>
             </div>
             <p>sẽ có tại nhà bạn trong 3-5 ngày làm việc</p>
         </div>
-        <div class="detail-middle column">
-            <img src="img/detail/main-img.png" alt="main-img" /><br>
-            <img src="img/detail/sub-img-1.png" alt="sub-img1" />
-            <img src="img/detail/sub-img-2.png" alt="sub-img2" />
-            <img src="img/detail/sub-img-3.png" alt="sub-img3" />
-            <img src="img/detail/sub-img-4.png" alt="sub-img4" />
+        <div class="detail-middle column category-item">
+            <div class="img-hover-contain ">
+                <img src="img/detail/main-img.png" alt="main-img" /><br>
+            </div>
+            <img src="img/detail/sub-img-1@2x.png" alt="sub-img1" class="sub-img-1" />
+            <img src="img/detail/sub-img-2@2x.png" alt="sub-img2" class="sub-img" />
+            <img src="img/detail/sub-img-3@2x.png" alt="sub-img3" class="sub-img" />
+            <img src="img/detail/sub-img-4@2x.png" alt="sub-img4" class="sub-img" />
         </div>
         <div class="detail-right column">
             <p>MÀU SẮC</p>
-            <div>
-                <span><button>Đen</button></span>
-                <span><button>Hồng</button></span>
+            <div class="display-flex">
+                <button class="btn-color btn-black"></button>
+                <button class="btn-color btn-pink"></button>
             </div>
             <p>KÍCH CỠ</p>
-            <div>
-                <span><button>XS</button></span>
-                <span><button>S</button></span>
-                <span><button>M</button></span>
-                <span><button>L</button></span>
+            <div class="display-flex">
+                <button class="btn-size">XS</button>
+                <button class="btn-size active-size">S</button>
+                <button class="btn-size">M</button>
+                <button class="btn-size">L</button>
             </div>
-            <p>Có sẵn tất cả kích cỡ, sắp hết hàng</p>
-            <button>Cho vào giỏ hàng</button>
+            <p style="color:#d40202">Có sẵn tất cả kích cỡ, sắp hết hàng</p>
+            <button class="btn-gio-hang">Cho vào giỏ hàng</button>
             <p>CHIA SẺ</p>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <div class="detail-right-bottom">
                 <p>BẠN CÓ THẮC MẮC?</p>
                 <span>Hãy truy cập trang </span><span><a href="#">HỎI ĐÁP</a></span>
-                <p>Thời gian làm việc:</p>
-                <p>Điện thoại: 8:00 - 18:00 (Thứ 2 đến CN) Ngày Lễ: 9:00 - 18:00 </p>
+                <p style="text-decoration: underline">Thời gian làm việc:</p>
+                <p>Điện thoại: 8:00 - 18:00</p>
+                <p>(Thứ 2 đến CN) </p>
+                <p>Ngày Lễ: 9:00 - 18:00 </p>
             </div>
         </div>
     </section>
@@ -228,24 +232,32 @@
     </section>
     <section class="suggestion-detail center">
         <h1>Có thể bạn sẽ thích</h1>
-        <div class="suggestion-detail-img">
-            <div class="suggestion-detail-img-1">
-                <img src="img/detail/product-1.png" alt="product1" />
+        <div class="display-flex">
+            <div class="suggestion-detail-img category-item">
+                <div class="img-hover-contain">
+                    <a href="#"><img src="img/detail/product-1.png" alt="product1" /></a>
+                </div>
                 <p>ĐẦM SP911</p>
                 <p>349.000</p>
             </div>
-            <div class="suggestion-detail-img-2">
-                <img src="img/detail/product-5.png" alt="product2" />
+            <div class="suggestion-detail-img category-item">
+                <div class="img-hover-contain">
+                    <a href="#"><img src="img/detail/product-5.png" alt="product2" /></a>
+                </div>
                 <p>ĐẦM SP911</p>
                 <p>349.000</p>
             </div>
-            <div class="suggestion-detail-img-3">
-                <img src="img/detail/product-6.png" alt="product3" />
+            <div class="suggestion-detail-img category-item">
+                <div class="img-hover-contain">
+                    <a href="#"><img src="img/detail/product-6.png" alt="product3" /></a>
+                </div>
                 <p>ĐẦM SP911</p>
                 <p>349.000</p>
             </div>
-            <div class="suggestion-detail-img-4">
-                <img src="img/detail/product-4.png" alt="product4" />
+            <div class="suggestion-detail-img category-item">
+                <div class="img-hover-contain">
+                    <a href="#"><img src="img/detail/product-4.png" alt="product4" /></a>
+                </div>
                 <p>ĐẦM SP911</p>
                 <p>349.000</p>
             </div>
