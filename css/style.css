@@ -36,9 +36,11 @@ tr {
     text-align: left;
 }
 
+
 /* tr:nth-child(even) {
     background-color: #dddddd;
 } */
+
 
 /* canh giữa cho thuộc tính */
 
@@ -62,6 +64,15 @@ tr {
     display: flex;
 }
 
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
 /* Header start */
 
 header ul li {
@@ -75,9 +86,11 @@ header {
     z-index: 1;
 }
 
-.top-bar, .second-bar {
+.top-bar,
+.second-bar {
     height: 57px;
 }
+
 
 /* làm multilevelmenu */
 
@@ -109,9 +122,11 @@ header li:hover>ul {
     opacity: 1;
 }
 
+
 /* lấy cái ul đầu tiên của Header */
 
-header>ul>li>ul {}
+
+/* header>ul>li>ul {} */
 
 .sub-menu1 {
     top: 100%;
@@ -146,15 +161,18 @@ nav a:visited {
     color: white
 }
 
-.top-bar a:link, nav a:link {
+.top-bar a:link,
+nav a:link {
     color: yellow
 }
 
-.top-bar a:hover, nav a:hover {
+.top-bar a:hover,
+nav a:hover {
     color: #FF00FF;
 }
 
-.top-bar a:active, nav a:active {
+.top-bar a:active,
+nav a:active {
     color: #0000FF;
 }
 
@@ -162,7 +180,9 @@ nav a:visited {
     background-color: black;
 }
 
+
 /* Header End */
+
 
 /* Banner top Start */
 
@@ -178,7 +198,8 @@ nav a:visited {
     display: flex;
 }
 
-.control-banner .carousel-control-prev, .control-banner .carousel-control-next {
+.control-banner .carousel-control-prev,
+.control-banner .carousel-control-next {
     position: relative;
     top: auto;
     bottom: auto;
@@ -187,7 +208,8 @@ nav a:visited {
     background: white;
 }
 
-.carousel-control-prev i, .carousel-control-next i {
+.carousel-control-prev i,
+.carousel-control-next i {
     color: black;
 }
 
@@ -198,6 +220,7 @@ nav a:visited {
 .control-banner .carousel-control-next {
     right: auto
 }
+
 
 /* categroy start */
 
@@ -214,7 +237,8 @@ nav a:visited {
     text-align: center;
 }
 
-.category-hero-title, .category-hero-text {
+.category-hero-title,
+.category-hero-text {
     width: 600px;
 }
 
@@ -230,10 +254,30 @@ nav a:visited {
 .category-item p:nth-child(3) {
     color: pink
 }
-.informations-text{
+
+.informations-text {
     width: 850px;
     padding: 30px;
 }
+
+.menu-page-right {
+    right: 0;
+}
+
+.menu ul {
+    display: none;
+}
+
+.menu:hover ul {
+    display: block;
+}
+
+.menu {
+    width: 20%;
+    padding-top: 30px;
+}
+
+
 /* category end */
 
 .hero {
@@ -255,7 +299,8 @@ nav a:visited {
     text-align: center;
 }
 
-.hero h1:nth-child(2), .hero h1:nth-child(3) {
+.hero h1:nth-child(2),
+.hero h1:nth-child(3) {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -280,7 +325,9 @@ nav a:visited {
     height: 50px;
 }
 
+
 /* Banner top End */
+
 
 /* free-ship start*/
 
@@ -295,6 +342,9 @@ nav a:visited {
     width: 50%;
     margin-top: 10px;
 }
+
+
+/* fixed-freeship logo Start */
 
 .fixed-free-ship {
     position: fixed;
@@ -320,8 +370,6 @@ nav a:visited {
     width: 150px;
 }
 
-/* freeship logo Start */
-
 @-webkit-keyframes mymove {
     from {
         left: 0px;
@@ -330,6 +378,7 @@ nav a:visited {
         left: 200px;
     }
 }
+
 
 /* Standard syntax */
 
@@ -342,7 +391,9 @@ nav a:visited {
     }
 }
 
-/* freeship logo End */
+
+/* fixed-freeship logo End */
+
 
 /* free-ship end */
 
@@ -350,7 +401,7 @@ nav a:visited {
     overflow: hidden;
 }
 
-.category-item img:hover {
+.img-hover-contain img:hover {
     -ms-transform: scale(2);
     -webkit-transform: scale(2);
     transform: scale(2);
@@ -399,9 +450,15 @@ nav a:visited {
     margin-left: 15px;
 }
 
-.bottom, .suggestion-content, .detail, .detail-bottom, .gio-hang-detail, .display-flex {
+.bottom,
+.suggestion-content,
+.detail,
+.detail-bottom,
+.gio-hang-detail,
+.display-flex {
     display: flex;
 }
+
 
 /* ma-khuyen-mai start */
 
@@ -418,7 +475,9 @@ nav a:visited {
     background: #00a99d;
 }
 
+
 /* ma-khuyen-mai end */
+
 
 /* deal-hot start */
 
@@ -430,6 +489,7 @@ nav a:visited {
     padding-left: 0;
     padding-right: 40px;
 }
+
 
 /* deal-hot end */
 
@@ -446,13 +506,10 @@ nav a:visited {
     height: 42px;
 }
 
-.box, .column-hot {
+.box,
+.column-hot {
     width: 33.33%;
     float: left;
-}
-
-.menu {
-    width: 20%;
 }
 
 .san-pham {
@@ -461,14 +518,6 @@ nav a:visited {
 
 .column {
     float: left;
-}
-
-.menu ul {
-    display: none;
-}
-
-.menu:hover ul {
-    display: block;
 }
 
 .freeship p:first-child {
@@ -483,6 +532,7 @@ nav a:visited {
 .bao-mat li::before {
     content: url("../img/index/group-1_1.png")
 }
+
 
 /* suggestion start */
 
@@ -577,7 +627,9 @@ nav a:visited {
     position: relative;
 }
 
+
 /* suggestion end */
+
 
 /* detail start */
 
@@ -643,7 +695,9 @@ nav a:visited {
     width: 35px;
 }
 
-.btn-size:hover, .btn-size:focus, .active-size {
+.btn-size:hover,
+.btn-size:focus,
+.active-size {
     background-color: black;
     color: white;
 }
@@ -656,7 +710,9 @@ nav a:visited {
     height: 40px;
 }
 
+
 /* detail end */
+
 
 /*Slider */
 
@@ -689,7 +745,9 @@ nav a:visited {
     cursor: pointer;
 }
 
+
 /* Slider End */
+
 
 /* whitesquare start */
 
@@ -707,6 +765,7 @@ nav a:visited {
     height: 359px;
     padding: 28px 0 0 0;
 }
+
 
 /* whitesquare end */
 
@@ -743,7 +802,8 @@ footer {
     width: 25%
 }
 
-footer p, footer li {
+footer p,
+footer li {
     color: white
 }
 
@@ -751,11 +811,13 @@ header .fa-bars {
     display: none
 }
 
+
 /* bottom start */
 
 .bottom {
     padding-top: 20px;
 }
+
 
 /* bottom end */
 
@@ -776,7 +838,9 @@ header .fa-bars {
     .deal-hot-display {
         display: block
     }
-    .deal-hot, .deal-hot-middle, .column-hot {
+    .deal-hot,
+    .deal-hot-middle,
+    .column-hot {
         width: 100%;
         float: none;
         display: block
@@ -784,7 +848,8 @@ header .fa-bars {
 }
 
 @media screen and (max-width: 767px) {
-    .top-bar, header ul {
+    .top-bar,
+    header ul {
         display: none
     }
     header .fa-bars {
@@ -799,23 +864,31 @@ header .fa-bars {
     .deal-hot-display {
         display: none;
     }
-    .deal-hot, .deal-hot-middle, .column-hot {
+    .deal-hot,
+    .deal-hot-middle,
+    .column-hot {
         display: none
     }
 }
 
+
 /* mobile
  chỉ có 2 cái hiển thị */
 
-.giao-hang-free-ship .free-ship:nth-child(3), .giao-hang-free-ship .free-ship:last-child, .ho-tro, .memberShip {
+.giao-hang-free-ship .free-ship:nth-child(3),
+.giao-hang-free-ship .free-ship:last-child,
+.ho-tro,
+.memberShip {
     display: none
 }
+
 
 /* tablet */
 
 @media screen and (min-width: 600px) {
     /* cả 3 cái đều hiển thị */
-    .giao-hang-free-ship .free-ship:nth-child(3), .memberShip {
+    .giao-hang-free-ship .free-ship:nth-child(3),
+    .memberShip {
         display: block;
     }
     .free-ship {
@@ -823,11 +896,13 @@ header .fa-bars {
     }
 }
 
+
 /* desktop */
 
 @media screen and (min-width: 991px) {
     /* cả 4 cái đều hiển thị */
-    .giao-hang-free-ship .free-ship:last-child, .ho-tro {
+    .giao-hang-free-ship .free-ship:last-child,
+    .ho-tro {
         display: block;
     }
     .free-ship {
